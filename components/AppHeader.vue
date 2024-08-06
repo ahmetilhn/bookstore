@@ -2,7 +2,7 @@
   <header class="w-full">
     <div class="w-full">
       <nav class="w-full relative z-50 flex justify-between">
-        <a aria-label="Home" href="#">
+        <NuxtLink to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="48px"
@@ -15,10 +15,10 @@
               fill="#eab308"
             />
           </svg>
-        </a>
-        <a
+        </NuxtLink>
+        <NuxtLink
           class="inline-flex h-11 items-center justify-center rounded-full px-4 text-sm font-semibold bg-primary-500 text-white hover:bg-primary-600"
-          href="/basket"
+          to="/basket"
           ><span class="inline-flex"
             >Basket
             <span class="ml-2">
@@ -37,7 +37,7 @@
                   stroke-linejoin="round"
                 />
               </svg> </span></span
-        ></a>
+        ></NuxtLink>
       </nav>
     </div>
   </header>
