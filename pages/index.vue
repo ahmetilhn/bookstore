@@ -1,3 +1,6 @@
 <template>
-  <h1></h1>
+  <div>
+    <IntroBanner />
+    <SearchBar />
+  </div>
 </template>
