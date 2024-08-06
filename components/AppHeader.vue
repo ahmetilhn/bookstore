@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full">
+  <header class="w-full backdrop-blur-md bg-white/60 sticky top-0 left-0 py-2">
     <div class="w-full">
       <nav class="w-full relative z-50 flex justify-between">
         <NuxtLink to="/">
@@ -18,9 +18,9 @@
         </NuxtLink>
         <NuxtLink
           class="inline-flex h-11 items-center justify-center rounded-full px-4 text-sm font-semibold bg-primary-500 text-white hover:bg-primary-600"
-          to="/basket"
+          to="/cart"
           ><span class="inline-flex"
-            >Basket
+            >Cart
             <span class="ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
