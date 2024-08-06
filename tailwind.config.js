@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -16,6 +17,10 @@ export default {
           600: "#ca8a04",
         },
       },
+    },
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
     },
   },
   plugins: [],

@@ -5,15 +5,9 @@
       books are here! Start searching now!
     </p>
     <h1
-      class="intro-title w-3/4 lg:text-6xl md:text-5xl sm:text-4xl font-extrabold font-serif text-black"
+      class="intro-title w-3/4 lg:text-6xl leading-[3.5rem] lg:leading-[5rem] md:leading-[4rem] md:text-5xl text-4xl font-extrabold font-serif text-black"
     >
       The most popular books are here!
     </h1>
   </div>
 </template>
-
-<style lang="css" scoped>
-.intro-title {
-  line-height: 80px;
-}
-</style>
