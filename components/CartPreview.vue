@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { useCartStore } from "~/store/cart";
-import { type IBook } from "~/types/IBook";
+import type { IBook } from "~/types/IBook";
 
 const { cart } = storeToRefs(useCartStore());
 

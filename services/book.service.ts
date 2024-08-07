@@ -1,4 +1,4 @@
-import { type IBook } from "~/types/IBook";
+import type { IBook } from "~/types/IBook";
 import bookClient from "./client/book.client";
 import type { AxiosResponse } from "axios";
 

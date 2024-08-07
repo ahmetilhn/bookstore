@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { type IBook } from "~/types/IBook";
+import type { IBook } from "~/types/IBook";
 import Cookie from "js-cookie";
 export const useCartStore = defineStore({
   id: "cart-store",

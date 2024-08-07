@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
 import { useCartStore } from "~/store/cart";
-import { type IBook } from "~/types/IBook";
+import type { IBook } from "~/types/IBook";
 const { title, author, coverImageUrl, price, id } = defineProps<IBook>();
 const { removeBook } = useCartStore();
 const handleRemoveBook = (): void => {

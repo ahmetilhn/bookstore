@@ -41,7 +41,7 @@
 </template>
 <script setup lang="ts">
 import { useBookStore } from "~/store/books";
-import { type IBook } from "~/types/IBook";
+import type { IBook } from "~/types/IBook";
 const { books, setBooks } = useBookStore();
 let clonedBooks = [] as Array<IBook>;
 
