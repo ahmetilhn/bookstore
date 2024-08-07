@@ -3,23 +3,20 @@
     class="w-full flex flex-row justify-between items-center bordered h-100 border border-gray-200 rounded-lg p-5 mb-5"
   >
     <div class="flex flex-row items-center">
-      <img
-        class="w-20"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/440px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
-        alt=""
-      />
+      <img class="h-20 w-20 object-cover" :src="coverImageUrl" alt="" />
       <div class="ml-5">
         <h5 class="text-xl font-semibold text-gray-600">
-          Apple Watch Series 7 GPS
+          {{ title }}
         </h5>
-        <span class="block text-primary-600 mt-2.5 font-semibold"
-          >Ahmet ilhan</span
-        >
+        <span class="block text-primary-600 mt-2.5 font-semibold">{{
+          author
+        }}</span>
       </div>
     </div>
     <div>
       <button
         class="inline-flex p-2 items-center justify-center rounded-full p-4 font-semibold bg-red-100 hover:bg-red-200"
+        @click="handleRemoveBook"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,3 +51,13 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useCartStore } from "~/store/cart";
+import { type IBook } from "~/types/IBook";
+const { title, author, coverImageUrl, price, id } = defineProps<IBook>();
+const { removeBook } = useCartStore();
+const handleRemoveBook = (): void => {
+  removeBook(id);
+};
+</script>

@@ -16,11 +16,13 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.3",
     "axios": "^1.7.3",
+    "js-cookie": "^3.0.5",
     "nuxt": "^3.12.4",
     "pinia": "^2.2.1",
     "vue": "latest"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.7",

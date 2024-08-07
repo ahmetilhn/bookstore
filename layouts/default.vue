@@ -8,3 +8,12 @@
     </div>
   </main>
 </template>
+<script setup lang="ts">
+import { useCartStore } from "~/store/cart";
+
+const { initCart } = useCartStore();
+
+onMounted(() => {
+  initCart();
+});
+</script>
