@@ -14,8 +14,9 @@
       Order now and have it delivered to your doorstep!
     </p>
     <button
+      :disabled="!cart?.length"
+      class="w-full flex mt-10 items-center justify-center rounded-md border border-transparent bg-primary-500 px-6 py-3 font-medium text-white shadow-sm hover:bg-primary-600 disabled:bg-gray-300"
       @click="handleEmptyCart"
-      class="w-full flex mt-10 items-center justify-center rounded-md border border-transparent bg-primary-500 px-6 py-3 font-medium text-white shadow-sm hover:bg-primary-600"
     >
       Checkout
     </button>
