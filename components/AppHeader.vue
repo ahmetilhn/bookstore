@@ -1,5 +1,7 @@
 <template>
-  <header class="w-full backdrop-blur-md bg-white/60 sticky top-0 left-0 py-2">
+  <header
+    class="w-full backdrop-blur-md bg-white/60 z-10 sticky top-0 left-0 py-2"
+  >
     <div class="w-full">
       <nav class="w-full relative z-50 flex justify-between">
         <NuxtLink to="/">
