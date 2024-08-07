@@ -12,6 +12,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { storeToRefs } from "pinia";
 import { useBookStore } from "~/store/books";
 const { books } = storeToRefs(useBookStore());
 </script>

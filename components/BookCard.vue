@@ -32,6 +32,8 @@
   </article>
 </template>
 <script setup lang="ts">
+import { computed } from "vue";
+import { storeToRefs } from "pinia";
 import { useCartStore } from "~/store/cart";
 import { type IBook } from "~/types/IBook";
 const { addBook, removeBook } = useCartStore();

@@ -40,6 +40,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { onMounted } from "vue";
 import { useBookStore } from "~/store/books";
 import type { IBook } from "~/types/IBook";
 const { books, setBooks } = useBookStore();

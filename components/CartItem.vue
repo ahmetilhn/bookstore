@@ -53,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps } from "vue";
 import { useCartStore } from "~/store/cart";
 import type { IBook } from "~/types/IBook";
 const { title, author, coverImageUrl, price, id } = defineProps<IBook>();

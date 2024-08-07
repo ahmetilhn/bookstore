@@ -22,6 +22,8 @@
 </template>
 
 <script setup lang="ts">
+import { storeToRefs } from "pinia";
+import { computed } from "vue";
 import { useCartStore } from "~/store/cart";
 import type { IBook } from "~/types/IBook";
 
