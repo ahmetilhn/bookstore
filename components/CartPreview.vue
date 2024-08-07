@@ -14,6 +14,7 @@
       Order now and have it delivered to your doorstep!
     </p>
     <button
+      @click="handleEmptyCart"
       class="w-full flex mt-10 items-center justify-center rounded-md border border-transparent bg-primary-500 px-6 py-3 font-medium text-white shadow-sm hover:bg-primary-600"
     >
       Checkout
@@ -26,7 +27,7 @@ import { storeToRefs } from "pinia";
 import { computed } from "vue";
 import { useCartStore } from "~/store/cart";
 import type { IBook } from "~/types/IBook";
-
+const { setCart } = useCartStore();
 const { cart } = storeToRefs(useCartStore());
 
 const totalPrice = computed(() =>
@@ -38,4 +39,8 @@ const totalPrice = computed(() =>
       currency: "USD",
     })
 );
+
+const handleEmptyCart = (): void => {
+  setCart([]);
+};
 </script>

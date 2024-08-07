@@ -2,7 +2,7 @@ import { mount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
 import IntroBanner from "../components/IntroBanner.vue";
 
-describe("IntroSection.vue", () => {
+describe("IntroPreview.vue", () => {
   it("renders the component correctly", () => {
     const wrapper = mount(IntroBanner);
 

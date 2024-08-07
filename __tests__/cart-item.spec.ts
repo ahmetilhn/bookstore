@@ -5,7 +5,7 @@ import CartItem from "../components/CartItem.vue";
 import type { IBook } from "../types/IBook";
 import { useCartStore } from "~/store/cart";
 
-describe("BookItem.vue", () => {
+describe("CartItem.vue", () => {
   it("renders the component correctly", () => {
     setActivePinia(createPinia());
 

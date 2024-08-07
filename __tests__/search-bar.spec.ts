@@ -4,7 +4,7 @@ import { createPinia, setActivePinia } from "pinia";
 import SearchBar from "../components/SearchBar.vue";
 import { useBookStore } from "../store/books";
 
-describe("BookSearch.vue", () => {
+describe("SearchBar.vue", () => {
   let wrapper: ReturnType<typeof mount>;
   let bookStore: ReturnType<typeof useBookStore>;
   beforeEach(() => {
