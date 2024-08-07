@@ -30,6 +30,7 @@ import type { IBook } from "~/types/IBook";
 const { cart } = storeToRefs(useCartStore());
 
 const totalPrice = computed(() =>
+  // calculate total price then convert locale currency
   cart.value
     .reduce((acc: number, cur: IBook) => acc + cur.price, 0)
     .toLocaleString("tr-TR", {

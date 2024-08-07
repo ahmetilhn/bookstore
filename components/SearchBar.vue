@@ -51,7 +51,9 @@ const handleChange = (e: Event) => {
   setBooks(filterBooks(value));
 };
 const filterBooks = (query: string): Array<IBook> => {
+  // if query is empty return cloned all books
   if (!query.length) return clonedBooks;
+  // delete spaces
   const _query = query.toLowerCase().trim();
   return clonedBooks.filter(
     (_book) =>

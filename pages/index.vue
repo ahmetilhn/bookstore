@@ -9,7 +9,7 @@
 import bookService from "~/services/book.service";
 import { useBookStore } from "~/store/books";
 const { setBooks } = useBookStore();
-await useAsyncData(async () => {
+useAsyncData(async () => {
   try {
     const res = await bookService.getAllBooks();
     if (Array.isArray(res?.data)) {

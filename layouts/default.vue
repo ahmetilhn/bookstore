@@ -14,6 +14,7 @@ import { useCartStore } from "~/store/cart";
 const { initCart } = useCartStore();
 
 onMounted(() => {
+  // get storage books from cookie
   initCart();
 });
 </script>
